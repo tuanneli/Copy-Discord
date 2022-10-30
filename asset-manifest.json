@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Copy-Discord/static/css/main.785c9651.css",
+    "main.js": "/Copy-Discord/static/js/main.9d4a2bfc.js",
+    "static/media/discord.jpg": "/Copy-Discord/static/media/discord.ba1754dd5331fa818a0e.jpg",
+    "static/media/Screenshot_3.png": "/Copy-Discord/static/media/Screenshot_3.6e457f9aad31c62f33f8.png",
+    "static/media/Screenshot_1.png": "/Copy-Discord/static/media/Screenshot_1.6efb07effc9d5ef2e2cb.png",
+    "static/media/Screenshot_4.png": "/Copy-Discord/static/media/Screenshot_4.825bf16f75c9e55e313e.png",
+    "static/media/Screenshot_5.png": "/Copy-Discord/static/media/Screenshot_5.93186e9b499318c25301.png",
+    "static/media/Screenshot_2.png": "/Copy-Discord/static/media/Screenshot_2.06e23e9512b58f0fb708.png",
+    "index.html": "/Copy-Discord/index.html",
+    "main.785c9651.css.map": "/Copy-Discord/static/css/main.785c9651.css.map",
+    "main.9d4a2bfc.js.map": "/Copy-Discord/static/js/main.9d4a2bfc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.785c9651.css",
+    "static/js/main.9d4a2bfc.js"
+  ]
+}
