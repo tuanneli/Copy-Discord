@@ -2,6 +2,7 @@
   "name": "test_task",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tuanneli.github.io/Copy-Discord/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -18,6 +19,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.2",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^4.0.0",
     "mobx": "^6.6.2",
     "mobx-react-lite": "^3.4.0",
     "node-sass": "^6.0.0",
@@ -32,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [

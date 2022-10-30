@@ -10,7 +10,7 @@ const MainWindow = () => {
             <Routes>
                 <Route path={'/'} element={<DirectMessages/>}/>
                 <Route path={'/discovery'} element={<Explore/>}/>
-                <Route path={'/*'} element={<Explore/>}/>
+                <Route path={'/*'} element={<DirectMessages/>}/>
             </Routes>
         </div>
     );
