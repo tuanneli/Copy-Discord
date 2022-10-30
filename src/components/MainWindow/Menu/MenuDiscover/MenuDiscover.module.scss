@@ -1,0 +1,85 @@
+.container {
+  width: 240px;
+  min-height: 100vh;
+  background-color: #2f3136;
+  font-family: "ABC Ginto Normal", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  position: fixed;
+
+  .box {
+    position: absolute;
+    overflow-y: auto;
+    height: calc(100% - 52px);
+    width: 240px;
+
+    .head {
+      margin: 16px 0 16px 16px;
+      font-weight: 700;
+      font-size: 25px;
+    }
+
+    .active {
+      background-color: #5865f2;
+
+      &:hover {
+        background-color: #5865f2 !important;
+      }
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      height: 35px;
+      padding: 5px 0 2px 10px;
+      border-radius: 5px;
+      margin: 5px 3px 5px 5px;
+      cursor: pointer;
+      color: #d2d2d2;
+
+      &:hover {
+        background-color: rgba(103, 103, 103, 0.23);
+      }
+
+      .item__icon {
+        flex-basis: 1fr;
+      }
+
+      .item__text {
+        margin-left: 15px;
+        flex-basis: 9fr;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          margin: 0;
+        }
+
+        .new {
+          color: white;
+          margin-left: 5px;
+          background-color: #5c5c67;
+          border-radius: 100vw;
+          padding: 0 5px;
+        }
+      }
+    }
+
+
+    &::-webkit-scrollbar {
+      height: 5px;
+      width: 15px;
+      background-color: #2f3136;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 100vw;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 100vw;
+      background-color: #2f3136;
+    }
+  }
+}
+

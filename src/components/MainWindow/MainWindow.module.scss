@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  background-color: #36393f;
+  width: calc(100% - 72px);
+  min-height: 100vh;
+  margin-left: 72px;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}

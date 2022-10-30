@@ -1,0 +1,160 @@
+.navbar {
+  height: 48px;
+  width: calc(100% - 300px);
+  position: fixed;
+  background-color: #36393f;
+  border-bottom: 1.5px solid #282626;
+  box-shadow: 0 2px 2px -2px #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  user-select: none;
+  color: #cbcbcb;
+
+  .left_part {
+    display: flex;
+
+    .part {
+      margin: 0 9px;
+      cursor: pointer;
+      border-radius: 3px;
+      padding: 0 7px;
+      clear: both;
+      display: inline-block;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: #454950;
+      }
+
+      &:active {
+        color: white;
+      }
+    }
+
+    .friends {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      color: white;
+      margin-left: 0 !important;
+      margin-right: 15px !important;
+      cursor: default !important;
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        background-color: #42464d;
+        height: 25px;
+        margin-left: 115px;
+      }
+
+      &:active,
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .add__friend {
+      background-color: #2d7d46;
+      color: white;
+      font-weight: 400;
+
+      &:hover {
+        background-color: #2d7d46;
+      }
+    }
+
+  }
+
+  .right_part {
+    height: 48px;
+    position: absolute;
+    right: 0;
+    background-color: #36393f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: -10px 0px 5px 0px #36393f;
+    -moz-box-shadow: -10px 0px 5px 0px #36393f;
+    box-shadow: -10px 0px 5px 0px #36393f;
+    margin-right: 10px;
+
+    .nav__item {
+      padding: 0 8px;
+      margin-top: 6px;
+      cursor: pointer;
+
+      &:hover {
+        .tooltip {
+          visibility: visible;
+        }
+      }
+    }
+
+    .new__group {
+      margin-right: 20px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        background-color: #42464d;
+        height: 25px;
+        margin-left: 19px;
+      }
+    }
+
+    .help {
+      color: #3ba55d;
+    }
+  }
+}
+
+.tooltip {
+  visibility: hidden;
+  font-size: 12px;
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 999;
+  color: white;
+  background-color: #141718;
+  border-radius: 5px;
+  padding: 8px 10px 8px 8px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #141718;
+    padding: 5px;
+    z-index: 1;
+  }
+}
+
+.new__group__tooltip {
+  transform: translate(-60px, 30px);
+
+  &:before {
+    transform: rotate(45deg) translate(17px, -31px);
+  }
+}
+
+.inbox__tooltip {
+  transform: translate(-36px, 30px);
+
+  &:before {
+    transform: rotate(45deg) translate(0px, -14px);
+  }
+}
+
+.help__tooltip {
+  transform: translate(-33px, 30px);
+
+  &:before {
+    transform: rotate(45deg) translate(-2px, -12px);
+  }
+}
